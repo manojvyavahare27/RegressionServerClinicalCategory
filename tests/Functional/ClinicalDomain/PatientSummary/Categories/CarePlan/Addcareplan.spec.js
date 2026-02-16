@@ -111,7 +111,7 @@ test.describe("Care Plan Category", () => {
      const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await allergy.closePopUp()
+          await carePlan.closePopUp()
         }
       await page.waitForTimeout(4000);
       await contacthistory.clickOnShowFilter();
