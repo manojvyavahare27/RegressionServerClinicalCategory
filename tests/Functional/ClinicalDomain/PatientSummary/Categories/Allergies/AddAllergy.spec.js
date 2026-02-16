@@ -108,7 +108,7 @@ test.describe("Allergy Category", () => {
       await page.waitForTimeout(1500);
      
       await confirmexisting.clickOnConfirmExistingDetails();   
-     await page.waitForTimeout(4000);
+     await page.waitForTimeout(6000);
     // await page.pause()
       // const alertPopup = page.locator("xpath=//h2[text()='Alerts']");
       // if (await alertPopup.isVisible()) {
