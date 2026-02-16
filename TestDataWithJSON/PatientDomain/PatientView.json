@@ -1,0 +1,131 @@
+{
+  "loginDetails": [
+    {
+      "username": "thayne.auto",
+      "password": "Thayne@2024"
+    },
+    {
+      "username": "saurabh.auto",
+      "password": "Dayal@2024"
+    },
+    {
+      "username": "prerelease.auto",
+      "password": "Manoj@2023"
+    }
+  ],
+  "PatientDetails": [
+    {
+      "pat_hospital_ref": "href05Reco005",
+      "pat_title": "Mr",
+      "pat_firstname": "Patient",
+      "pat_surname": "View",
+      "pat_sex": "Female",
+      "pat_dob": "12/05/2005",
+      "pat_marital_status": "Single",
+      "pat_ethnicity_text": "Indian",
+      "pat_occupation": "Trainer",
+      "pat_notes": "Added for Testing",
+      "pat_type": "Regular",
+      "pat_maiden_name": "Pune",
+      "pat_blood_group": "B+",
+      "pat_religion": "Hindu",
+      "pat_middlename": "Martin",
+      "pat_registered_disabled_yes": "No",
+      "pat_registered_disabled": 0,
+      "pat_currently_pregnant_yes": "No",
+      "pat_currently_pregnant": 0,
+      "pat_language": "English",
+      "pat_temp_address_start": "01-04-2023",
+      "pat_country_of_birth": "India",
+      "pat_gender_at_birth": "M",
+      "pat_nationality": "Indian",
+      "pat_prisoner_yes": "No",
+      "pat_county_of_birth": "Maharashtra",
+      "pat_town_of_birth": "Pune",
+      "pat_sexual_orientation_eli_text": "Heterosexuality",
+      "pat_disability_note": "For Testing"
+    }
+  ],
+  "PatientViewSections": [
+    {
+      "selector": "Hot food",
+      "selector2": "none",
+      "popUp": "Allergies History"
+    },
+    {
+      "selector": "Heart Valve Disorder",
+      "selector2": "none",
+      "popUp": "Diagnosis History"
+    },
+    {
+      "selector": "Cochlear Implantation",
+      "selector2": "Dermabrasion",
+      "popUp": "Procedures History"
+    },
+    {
+      "selector": "Respiratory",
+      "selector2": "none",
+      "popUp": "Current Problems and Symptoms History"
+    },
+    {
+      "selector": "Brain tumour",
+      "selector2": "none",
+      "popUp": "Conditions History"
+    },
+    {
+      "selector": "Aspirin 100mg capsules",
+      "selector2": "none",
+      "popUp": "Medications History"
+    },
+    {
+      "selector": "Cochlear structure",
+      "selector2": "none",
+      "popUp": "Devices History"
+    },
+    {
+      "selector": "Renal Function Test",
+      "selector2": "none",
+      "popUp": "Investigations History"
+    },
+    {
+      "selector": "Reproductive finding",
+      "selector2": "none",
+      "popUp": "Examinations History"
+    },
+    {
+      "selector": "Alcohol misuse",
+      "selector2": "none",
+      "popUp": "Lifestyle History"
+    },
+    {
+      "selector": "Secondary school education",
+      "selector2": "none",
+      "popUp": "Social Circumstances History"
+    },
+    {
+      "selector": "Disorder of lymphatics",
+      "selector2": "none",
+      "popUp": "Risk Factors History"
+    },
+    {
+      "selector": "DAS28",
+      "selector2": "none",
+      "popUp": "Test/Tools History"
+    },
+    {
+      "selector": "Intermediate",
+      "selector2": "none",
+      "popUp": "Interpretations History"
+    },
+    {
+      "selector": "Dietary advice",
+      "selector2": "none",
+      "popUp": "Recommendations History"
+    },
+    {
+      "selector": "Pregnancy 1",
+      "selector2": "none",
+      "popUp": "Pregnancies History"
+    }
+  ]
+}

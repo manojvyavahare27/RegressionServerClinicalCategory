@@ -1,0 +1,677 @@
+{
+  "loginDetails": [
+    {
+      "username": "manoj.auto",
+      "password": "Manoj@2024"
+    },
+    {
+      "username": "saurabh.auto",
+      "password": "Dayal@2024"
+    },
+    {
+      "username": "prerelease.auto",
+      "password": "Manoj@2023"
+    }
+  ],
+  "PatientDetails": [
+    {
+      "pat_hospital_ref": "href05Reco271",
+      "pat_title": "Mr",
+      "pat_firstname": "auotmation",
+      "pat_surname": "Riomedtest",
+      "pat_sex": "M",
+      "pat_dob": "28/09/1994",
+      "pat_marital_status": "Single",
+      "pat_ethnicity_text": "Indian",
+      "pat_occupation": "Trainer",
+      "pat_notes": "Added for Testing",
+      "pat_type": "Regular",
+      "pat_maiden_name": "Pune",
+      "pat_blood_group": "B+",
+      "pat_religion": "Hindu",
+      "pat_middlename": "Martin",
+      "pat_registered_disabled_yes": "No",
+      "pat_registered_disabled": 0,
+      "pat_currently_pregnant_yes": "No",
+      "pat_currently_pregnant": 0,
+      "pat_language": "English",
+      "pat_temp_address_start": "01-04-2023",
+      "pat_country_of_birth": "India",
+      "pat_gender_at_birth": "M",
+      "pat_nationality": "Indian",
+      "pat_prisoner_yes": "No",
+      "pat_county_of_birth": "Maharashtra",
+      "pat_town_of_birth": "Pune",
+      "pat_sexual_orientation_eli_text": "Heterosexuality",
+      "pat_disability_note": "For Testing"
+    }
+  ],
+  "MedicationCategory": [],
+  "AddMedication": [
+    {
+      "pacr_category": "Medication",
+      "pacr_que_name": "Aspirin 25mg capsules",
+      "medi_dose": "2",
+      "medi_frequency": "12 Hours",
+      "medi_method": "Oral",
+      "medi_route": "Oral",
+      "medi_duration": "2",
+      "meded_value": "Left",
+      "medi_start_date": "16/06/2024",
+      "medi_stop_date": "18/06/2024",
+      "pacr_status": "Current",
+      "medi_prescribed_by": "GP",
+      "pcl_location_name": "Cardio Location",
+      "pacr_que_name_Diagnosis": "Asthma",
+      "medi_notes": "Added notes for testing",
+      "medi_stopped_reason_eli_text": "Dose completed",
+      "mse_text": "Drowsiness",
+      "paprd_endorsement": "Yes",
+      "paprd_cost": "10",
+      "meded_value_Price_check_quantity": "2",
+      "meded_value_Administrator": "Administrator",
+      "meded_value_PGD": "PGD",
+      "meded_value_MaxReffills": "5",
+      "meded_value_Unit": "Tab",
+      "meded_value_Quantity": "3",
+      "meded_value_MaxReffills_1": 5,
+      "meded_value_Adherent": "Adherent",
+      "eli_text": "Antibacterial",
+      "que_display_text": "Dirty living conditions",
+      "question_name": "Notes"
+    }
+  ],
+  "EditMedication": [
+    {
+      "pacr_category": "Medication",
+      "pacr_que_name": "Aspirin 25mg capsules",
+      "medi_dose": "3",
+      "medi_frequency": "24 Hours",
+      "medi_method": "Oral",
+      "medi_route": "Oral",
+      "meded_value": "Right",
+      "medi_duration": "3",
+      "medi_start_date": "12/06/2024",
+      "medi_stop_date": "14/06/2024",
+      "medi_status": "Prescribed",
+      "medi_prescribed_by": "Hospital consultant",
+      "medi_notes": "Updated notes for testing",
+      "eli_text": "Antibacterial",
+      "mse_text": "Drowsiness",
+      "meded_value_Quantity": "3",
+      "meded_value_MaxReffills": "4",
+      "meded_value_PGD": "PSD",
+      "medi_notes_1": "Edited notes for testing",
+      "pcl_location_name": "Cardio Location"
+    }
+  ],
+  "DeleteMedication": [
+    {
+      "pacr_category": "Medication",
+      "pacr_que_name": "Aspirin 25mg capsules",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "MedicationEDS": [],
+  "AddExamination": [
+    {
+      "pacr_category": "Examination",
+      "pacr_subcategory": "Physical Examination",
+      "pacr_que_name": "Dry eye",
+      "pacr_que_name_recommendation": "Rectoplasty",
+      "exam_outcome": "Normal",
+      "pacr_clinic_date": 45407,
+      "exam_notes": "Added for Notes",
+      "eli_text": "Exm subsection",
+      "pacrd_subcategory_eli_code": "EX1008"
+    }
+  ],
+  "EditExamination": [
+    {
+      "pacr_category": "Examination",
+      "pacr_que_name": "Dry eye",
+      "pacr_que_name_recommendation": "Rectoplasty",
+      "exam_outcome": "Abnormal",
+      "examed_value": 45407,
+      "exam_notes": "Edited for Notes"
+    }
+  ],
+  "DeleteExamination": [
+    {
+      "pacr_category": "Examination",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddRecommendations": [
+    {
+      "pacr_category": "Recommendation",
+      "pacr_subcategory": "Preventive Measures",
+      "pacr_que_name": "Rectoplasty",
+      "eli_text": "Recommendations",
+      "recom_review_date": "15-05-2024",
+      "recom_notes": "Added Recommendation for testing"
+    }
+  ],
+  "EditRecommendations": [
+    {
+      "pacr_category": "Recommendation",
+      "pacr_que_name": "Rectoplasty",
+      "eli_text": "Recommendations",
+      "recom_review_date": "15-05-2024",
+      "recom_notes": "Edited Recommendation for testing"
+    }
+  ],
+  "DeleteRecommendations": [
+    {
+      "pacr_category": "Recommendation",
+      "pacr_que_name": "Rectoplasty",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddOutcome": [
+    {
+      "pacr_category": "Outcome",
+      "pacr_que_name": "Sleep walking disorder",
+      "pacr_clinic_date": 45420,
+      "pacr_risk": "none",
+      "outc_date": "13-05-2024",
+      "outc_frequency": "1",
+      "outc_notes": "Added Notes for Outcome",
+      "eli_text": "Normal Outcome",
+      "pacrd_subcategory_eli_code": "OUTC12345"
+    }
+  ],
+  "EditOutcome": [
+    {
+      "pacr_category": "Outcome",
+      "pacr_que_name": "Sleep walking disorder",
+      "pacr_clinic_date": "08-05-2024",
+      "pacr_risk": "moderate",
+      "outc_date": "09-05-2024",
+      "outc_frequency": "2",
+      "outc_notes": "Updated Notes for Outcome",
+      "eli_text": "Abnormal Outcome",
+      "pacrd_subcategory_eli_code": "OUTC12346"
+    }
+  ],
+  "DeleteOutcome": [
+    {
+      "pacr_que_name": "Sleep walking disorder",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddDiagnosis": [
+    {
+      "pacr_category": "Diagnosis",
+      "pacr_que_name": "Dengue haemorrhagic fever",
+      "pacr_status": "suspected",
+      "pacr_risk": "none",
+      "diag_diagnosis_status": "Primary",
+      "diag_severity": "Mild",
+      "diag_activity": "Remission",
+      "diag_date_firstseen": "28-05-2024",
+      "diag_date_onset": "28-05-2024",
+      "diag_date_diagnosed": "08-05-2024",
+      "diag_notes": "Added Diagnosis Notes From Playwright",
+      "remove_favourites": "Hypothyroidism",
+      "question_name": "Notes"
+    }
+  ],
+  "EditDiagnosis": [
+    {
+      "pacr_category": "Diagnosis",
+      "pacr_que_name": "Dengue haemorrhagic fever",
+      "pacr_status": "suspected",
+      "pacr_risk": "none",
+      "diag_diagnosis_status": "Secondary",
+      "diag_severity": "Moderate",
+      "diag_activity": "Smouldering",
+      "diag_date_firstseen": "09-05-2024",
+      "diag_date_onset": "09-05-2024",
+      "diag_date_diagnosed": "09-05-2024",
+      "diag_notes": "Updated Diagnosis Notes From Playwright"
+    }
+  ],
+  "DeleteDiagnosis": [
+    {
+      "pacr_que_name": "Dengue haemorrhagic fever",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddInterpretation": [
+    {
+      "pacr_category": "Interpretation",
+      "pacr_que_name": "Antenatal screening",
+      "inte_outcome_eli_text": "Abnormal",
+      "pacr_clinic_date": 45453,
+      "inte_notes": "Added for Notes",
+      "eli_text": "Interpretation 1"
+    }
+  ],
+  "EditInterpretation": [
+    {
+      "pacr_category": "Interpretation",
+      "pacr_que_name": "Antenatal screening",
+      "inte_outcome_eli_text": "Normal",
+      "pacr_clinic_date": 45453,
+      "inte_notes": "Edited Notes for Interpretation",
+      "eli_text": "Interpretation 1"
+    }
+  ],
+  "DeleteInterpretation": [
+    {
+      "pacr_category": "Interpretation",
+      "pacr_que_name": "Antenatal screening",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddAllergy": [
+    {
+      "pacr_category": "Allergies",
+      "pacr_que_name": "Coal dust",
+      "alrg_reaction_severity": "Moderate",
+      "pacr_clinic_date": "15/04/2025",
+      "alrg_notes": "Add for Notes",
+      "eli_text": "Sneezing",
+      "alrg_start_date": "08/05/2024",
+      "alrg_end_date": "20/05/2024"
+    }
+  ],
+  "EditAllergy": [
+    {
+      "pacr_category": "Allergies",
+      "pacr_que_name": "Coal dust",
+      "alrg_reaction_severity": "Moderate",
+      "pacr_clinic_date": "15/04/2025",
+      "alrg_notes": "Edit for Notes",
+      "eli_text": "Sneezing",
+      "alrg_start_date": "20/05/2024",
+      "alrg_end_date": "23/06/2024"
+    }
+  ],
+  "DeleteAllergy": [
+    {
+      "pacr_category": "Allergies",
+      "pacr_que_name": "Coal dust",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddProcedure": [
+    {
+      "pacr_category": "Procedure",
+      "pacr_que_name": "Arthroplasty",
+      "Date": "01/01/2025",
+      "proc_procedure_date": "01/01/2025",
+      "proc_site": "Left",
+      "proc_type": "High",
+      "proc_notes": "Add Procedure Notes",
+      "proc_procedure_level": "Primary",
+      "pacr_status": "Requested",
+      "eli_text": "Surgical Procedures",
+      "question_name": "Notes",
+      "proc_outcome": "Normal",
+      "proc_status": "Requested",
+      "question_name_1": "Notes"
+    }
+  ],
+  "EditProcedure": [
+    {
+      "pacr_category": "Procedure",
+      "pacr_que_name": "Arthroplasty",
+      "proc_procedure_date": 45762,
+      "proc_site": "Left",
+      "proc_type": "High",
+      "proc_notes": "Add Procedure Notes",
+      "proc_procedure_level": "Primary",
+      "pacr_status": "Requested",
+      "eli_text": "Surgical Procedures",
+      "question_name": "Notes",
+      "proc_outcome": "Normal",
+      "proc_status": "Requested"
+    }
+  ],
+  "DeleteProcedure": [
+    {
+      "pacr_category": "Procedure",
+      "pacr_que_name": "Arthroplasty",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddPatientScan": [
+    {
+      "pacr_category": "Patient Scan",
+      "pacr_que_name": "Doppler ultrasound",
+      "pacr_risk": "none",
+      "pascn_notes": "Added Notes for Patient Scan",
+      "eli_text": "Scan",
+      "pascn_scan_type_eli_text": "X-rays",
+      "pacrd_subcategory_eli_code": 57749615244,
+      "pascn_t_score": "2",
+      "pascn_z_score": "1",
+      "pascn_bmd_score": "1",
+      "pascn_scan_date": "19/06/2024",
+      "pascn_site_name": "Ligament",
+      "pascn_machine_name": "Portable X-ray Machine"
+    }
+  ],
+  "EditPatientScan": [
+    {
+      "pacr_category": "Patient Scan",
+      "pacr_que_name": "Doppler ultrasound",
+      "pacr_risk": "none",
+      "pascn_notes": "Patient Scan record edited",
+      "eli_text": "Scan",
+      "pacrd_subcategory_eli_code": 57749615244,
+      "pascn_scan_type_eli_text": "X-rays",
+      "pascn_t_score": "2",
+      "pascn_z_score": "1",
+      "pascn_bmd_score": "1",
+      "pascn_scan_date": "19/06/2024",
+      "pascn_site_name": "Ligament",
+      "pascn_machine_name": "Portable X-ray Machine"
+    }
+  ],
+  "DeletePatientScan": [
+    {
+      "pacr_que_name": "Doppler ultrasound",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddProblems": [
+    {
+      "pacr_category": "Presenting Problem",
+      "pacr_que_name": "Back pain",
+      "pacr_risk": "none",
+      "prp_notes": "Added Notes for Patient problem",
+      "eli_text": "Presenting Problems",
+      "prp_date_of_onset": "01/07/2024",
+      "pacrd_subcategory_eli_code": "PR12845",
+      "prp_status": "New",
+      "prp_onset": "Sudden",
+      "prp_severity": "Mild",
+      "prp_rating": "3"
+    }
+  ],
+  "EditProblems": [
+    {
+      "pacr_category": "Presenting Problem",
+      "pacr_que_name": "Back pain",
+      "pacr_risk": "none",
+      "prp_notes": "Patient Problems edited",
+      "eli_text": "Presenting Problems",
+      "prp_date_of_onset": "05/07/2024",
+      "pacrd_subcategory_eli_code": "PR12845",
+      "prp_status": "Worsening",
+      "prp_onset": "Gradual",
+      "prp_severity": "Moderate",
+      "prp_rating": "5"
+    }
+  ],
+  "DeleteProblems": [
+    {
+      "pacr_que_name": "Back pain",
+      "pacr_delete_reason": "Not required"
+    }
+  ],
+  "AddOverview": [
+    {
+      "pacr_category": "Overview",
+      "pacr_que_name": "Overview",
+      "pacr_risk": "none",
+      "over_notes": "Added Notes for Overview",
+      "eli_text": "Overview Sub",
+      "pacrd_subcategory_eli_code": 5774961523
+    }
+  ],
+  "EditOverview": [
+    {
+      "pacr_category": "Overview",
+      "pacr_que_name": "Overview",
+      "over_notes": "Overview Edited",
+      "eli_text": "Overview Sub"
+    }
+  ],
+  "DeleteOverview": [
+    {
+      "pacr_que_name": "Overview",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "Addsocial": [
+    {
+      "pacr_category": "Social Circumstance",
+      "pacr_que_name": "Diet",
+      "soci_notes": "Added Notes for Social Circumstances",
+      "eli_text": "Current Circumstance"
+    }
+  ],
+  "Editsocial": [
+    {
+      "pacr_category": "Social Circumstance",
+      "pacr_que_name": "Diet",
+      "soci_notes": "Edited Notes for Social Circumstances",
+      "eli_text": "Current Circumstance"
+    }
+  ],
+  "Deletesocial": [
+    {
+      "pacr_category": "Social Circumstance",
+      "pacr_que_name": "Diet",
+      "pacr_delete_reason": "Delete for testing"
+    }
+  ],
+  "AddRiskFactor": [
+    {
+      "pacr_category": "Risk Factor",
+      "pacr_que_name": "Adult At Risk",
+      "risk_notes": "Added Notes for Risk Factor",
+      "eli_text": "Risk Factor 1"
+    }
+  ],
+  "EditRiskFactor": [
+    {
+      "pacr_category": "Risk Factor",
+      "pacr_que_name": "Adult At Risk",
+      "risk_notes": "Edited Notes for Risk Factor",
+      "eli_text": "Risk Factor 1"
+    }
+  ],
+  "DeleteRiskFactor": [
+    {
+      "pacr_category": "Risk Factors",
+      "pacr_que_name": "Adult At Risk",
+      "pacr_delete_reason": "Delete Risk Factor"
+    }
+  ],
+  "AddLifestyle": [
+    {
+      "pacr_category": "Lifestyle",
+      "pacr_que_name": "Smoking Status: Current Smoker",
+      "life_notes": "Added Notes for Lifestyle",
+      "eli_text": "Current Lifestyle"
+    }
+  ],
+  "EditLifestyle": [
+    {
+      "pacr_category": "Lifestyle",
+      "pacr_que_name": "Smoking Status: Current Smoker",
+      "life_notes": "Edit Notes for Lifestyle",
+      "eli_text": "Current Lifestyle"
+    }
+  ],
+  "DeleteLifestyle": [
+    {
+      "pacr_category": "Lifestyle",
+      "pacr_que_name": "Smoking Status: Current Smoker",
+      "pacr_delete_reason": "Delete Lifestyle"
+    }
+  ],
+  "AddInvestigation": [
+    {
+      "pacr_category": "Investigation",
+      "pacr_que_name": "Renal Function Test",
+      "status": "Requested",
+      "eli_text": "Subcategory 1",
+      "reason": "Borderline",
+      "result": "Pending",
+      "outcome": "Abnormal",
+      "critical": "Yes",
+      "date": "11/09/2024",
+      "location": "Cardio Location",
+      "dateReview": "30/09/2024",
+      "dateCompleted": "12/09/2024",
+      "priority": "High",
+      "sendTo": "Default Lab",
+      "extLocation": "Riomed",
+      "notes": "Investigation Requested"
+    }
+  ],
+  "EditInvestigation": [
+    {
+      "pacr_category": "Investigation",
+      "pacr_que_name": "Renal Function Test",
+      "status": "Completed",
+      "eli_text": "Subcategory 1",
+      "reason": "Borderline",
+      "result": "Positive",
+      "outcome": "Abnormal",
+      "critical": "Yes",
+      "date": "11/09/2024",
+      "location": "Cardio Location",
+      "dateReview": "30/09/2024",
+      "dateCompleted": "12/09/2024",
+      "priority": "High",
+      "sendTo": "Default Lab",
+      "extLocation": "Riomed",
+      "notes": "Investigation completed",
+      "value1": "65",
+      "value2": "20",
+      "target1": "65",
+      "target1_1": "8"
+    }
+  ],
+  "AddCondition": [
+    {
+      "pacr_category": "Condition",
+      "pacr_que_name": "Erythematous condition",
+      "cond_date_diagnosed": "25-05-2024",
+      "pacr_clinic_date": "28-06-2024",
+      "cond_notes": "Added for Notes for Condition",
+      "eli_text": "subcategory1"
+    }
+  ],
+  "EditCondition": [
+    {
+      "pacr_category": "Condition",
+      "pacr_que_name": "Erythematous condition",
+      "cond_date_diagnosed": "25-05-2024",
+      "pacr_clinic_date": "28-06-2024",
+      "cond_notes": "Edit for Notes for Condition",
+      "eli_text": "subcategory1"
+    }
+  ],
+  "DeleteCondition": [
+    {
+      "pacr_category": "Condition",
+      "pacr_que_name": "Erythematous condition"
+    }
+  ],
+  "AddPatientDetails": [
+    {
+      "pacr_category": "Patient Detail",
+      "pacr_que_name": "Lives on boat",
+      "eli_text": "Patient Details",
+      "pad_notes": "Patient lives on boat "
+    }
+  ],
+  "EditPatientDetails": [
+    {
+      "pacr_category": "Patient Detail",
+      "pacr_que_name": "Lives on boat",
+      "eli_text": "Patient Details",
+      "pad_notes": "Patient lives on boat "
+    }
+  ],
+  "DeletePatientDetails": [
+    {
+      "pacr_category": "Patient Detail",
+      "pacr_que_name": "Lives on boat",
+      "pacr_delete_reason": "not required"
+    }
+  ],
+  "AddTask": [
+    {
+      "task_name": "Regular Checkup",
+      "task_due_date": "20/08/2024",
+      "task_due_time": "09:00",
+      "task_status": "notCompleted",
+      "task_priority": "normal",
+      "specialty": "Cardiology",
+      "clinic_type": "Cardiology Clinic",
+      "appt_location": "Cardio Location",
+      "team": "HP Region1",
+      "alert_category": "Arrange Appointment",
+      "taskd_description": "Appt. task created",
+      "task_notes": "Appt. needed",
+      "age_min": "8",
+      "age_max": "70",
+      "task_username": "Mr Prerelease AutoEst"
+    }
+  ],
+  "EditTask": [
+    {
+      "due_date": "22/08/2024",
+      "due_time": "11:00",
+      "specialty": "Cardiology",
+      "clinic_type": "Cardiology Clinic",
+      "appt_location": "Cardio Location",
+      "team": "HP Region1",
+      "description": "Appt. task created",
+      "notes": "Task Updated",
+      "age_min": "8",
+      "age_max": "70",
+      "task_username": "Mr Prerelease AutoEst"
+    }
+  ],
+  "AddCarePlan": [
+    {
+      "pacr_category": "Care Plans",
+      "pacr_que_name": "Hip Replacement",
+      "carpd_type_nursingDiagnosis": "nursingDiagnosis",
+      "carpd_que_name": "Spinal Cord Injury",
+      "carpd_notes_nursingDiagnosis": "notes Spinal Cord Injury",
+      "carpd_type_goals": "goals",
+      "carpd_eli_text_goals": "Long Term Goal",
+      "carpd_notes_goals": "notes  Long Term Goal",
+      "carpd_type_interventions": "interventions",
+      "carpd_eli_text_interventions": "Assessment and Monitoring",
+      "carpd_notes_interventions": "notes Assessment and Monitoring",
+      "carpd_type_evaluations": "evaluations",
+      "carpd_eli_text_evaluations": "Evaluate wound healing",
+      "carpd_notes_evaluations": "Notes Evaluate wound healing",
+      "carpd_type_notes": "added ED notes",
+      "__EMPTY": "added ED notes"
+    }
+  ],
+  "EditCarePlan": [
+    {
+      "pacr_category": "Care Plans",
+      "pacr_que_name": "Hip Replacement",
+      "carpd_type_nursingDiagnosis": "nursingDiagnosis",
+      "carpd_que_name": "Spinal Cord Injury",
+      "carpd_notes_nursingDiagnosis": "Edit notes Spinal Cord Injury",
+      "carpd_type_goals": "goals",
+      "carpd_eli_text_goals": "Long Term Goal",
+      "carpd_notes_goals": "Edit notes  Long Term Goal",
+      "carpd_type_interventions": "interventions",
+      "carpd_eli_text_interventions": "Assessment and Monitoring",
+      "carpd_notes_interventions": "Edit notes Assessment and Monitoring",
+      "carpd_type_evaluations": "evaluations",
+      "carpd_eli_text_evaluations": "Evaluate wound healing",
+      "carpd_notes_evaluations": "Edit Notes Evaluate wound healing",
+      "carpd_type_notes": "added ED notes",
+      "__EMPTY": "added ED notes"
+    }
+  ],
+  "DeleteCarePlan": []
+}

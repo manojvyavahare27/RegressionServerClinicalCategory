@@ -1,0 +1,207 @@
+{
+  "loginDetails": [
+    {
+      "username": "manoj.auto",
+      "password": "Manoj@2025"
+    },
+    {
+      "username": "prerelease.auto",
+      "password": "Manoj@2025"
+    }
+  ],
+  "PatientDetails": [
+    {
+      "pat_hospital_ref": "href05Reco005",
+      "pat_title": "Mr",
+      "pat_firstname": "Medical",
+      "pat_surname": "Certificate",
+      "pat_sex": "M",
+      "pat_dob": "01/01/2000",
+      "pat_marital_status": "Single",
+      "pat_ethnicity_text": "Indian",
+      "pat_occupation": "Trainer",
+      "pat_notes": "Added for Testing",
+      "pat_type": "Regular",
+      "pat_maiden_name": "Pune",
+      "pat_blood_group": "B+",
+      "pat_religion": "Hindu",
+      "pat_middlename": "Martin",
+      "pat_registered_disabled_yes": "No",
+      "pat_registered_disabled": 0,
+      "pat_currently_pregnant_yes": "No",
+      "pat_currently_pregnant": 0,
+      "pat_language": "English",
+      "pat_temp_address_start": "01-04-2023",
+      "pat_country_of_birth": "India",
+      "pat_gender_at_birth": "M",
+      "pat_nationality": "Indian",
+      "pat_prisoner_yes": "No",
+      "pat_county_of_birth": "Maharashtra",
+      "pat_town_of_birth": "Pune",
+      "pat_sexual_orientation_eli_text": "Heterosexuality",
+      "pat_disability_note": "For Testing"
+    }
+  ],
+  "MedicalCertificate": [
+    {
+      "cert_certificate_class_eli_text": "Class 1 Pilots",
+      "cert_sub_type_name": "Single pilot commercial operations carrying passengers",
+      "patmce_cert_code": "Class1SP",
+      "patmce_class": "Class 1 Pilots",
+      "patmce_sub_class": "Single pilot commercial operations carrying passengers",
+      "patmce_notes": "Added for testing",
+      "certre_code_type": "investigations",
+      "certre_requirement_name": "Audiogram",
+      "clk_code": "TML",
+      "clk_description": "Limited period of validity of the medical certificate",
+      "patmcsn_fit_status": "fit",
+      "patmcsn_reason": "Added for testing",
+      "patmch_certificate_mode": "initial",
+      "patmch_certificate_status": "fit",
+      "patmch_clinic_date": "01-01-2025",
+      "patmch_reason": "Added Deletion Reason",
+      "patmce_ame_declaration_text": "Declaration added",
+      "patmce_notes_1": "Added for testing"
+    },
+    {
+      "certre_requirement_name": "Electrocardiogram"
+    },
+    {
+      "certre_requirement_name": "Comprehensive Ophthalmology"
+    }
+  ],
+  "EditMedicalCertificate": [
+    {
+      "cert_certificate_class_eli_text": "Class 1 Pilots",
+      "cert_sub_type_name": "Single pilot commercial operations carrying passengers",
+      "patmce_cert_code": "Class1SP",
+      "patmce_class": "Class 1 Pilots",
+      "patmce_sub_class": "Single pilot commercial operations carrying passengers",
+      "patmce_notes": "Edited for testing",
+      "certre_code_type": "investigations",
+      "certre_requirement_name": "Audiogram",
+      "clk_code": "TML",
+      "clk_description": "Limited period of validity of the medical certificate",
+      "patmcsn_fit_status": "fit",
+      "patmcsn_reason": "Added for testing",
+      "patmch_certificate_mode": "initial",
+      "patmch_certificate_status": "fit",
+      "patmch_clinic_date": "01-01-2025",
+      "patmch_reason": "Added Deletion Reason",
+      "patmce_ame_declaration_text": "Edit Declaration",
+      "patmce_notes_1": "Added for testing"
+    },
+    {
+      "certre_requirement_name": "Electrocardiogram"
+    },
+    {
+      "certre_requirement_name": "Comprehensive Ophthalmology"
+    }
+  ],
+  "DeleteMedicalCertificate": [
+    {
+      "cert_certificate_class_eli_text": "Class 1 Pilots",
+      "cert_sub_type_name": "Single pilot commercial operations carrying passengers",
+      "patmce_cert_code": "Class1SP",
+      "patmce_class": "Class 1 Pilots",
+      "patmce_sub_class": "Single pilot commercial operations carrying passengers",
+      "patmce_notes": "Edited for testing",
+      "certre_code_type": "investigations",
+      "certre_requirement_name": "Audiogram",
+      "clk_code": "TML",
+      "clk_description": "Limited period of validity of the medical certificate",
+      "patmcsn_fit_status": "fit",
+      "patmcsn_reason": "Added for testing",
+      "patmch_certificate_mode": "initial",
+      "patmch_certificate_status": "fit",
+      "patmch_clinic_date": "01-01-2025",
+      "patmch_reason": "Delete Medical certificate",
+      "patmce_ame_declaration_text": "Edit Declaration",
+      "patmce_notes_1": "Added for testing"
+    },
+    {
+      "certre_requirement_name": "Electrocardiogram"
+    },
+    {
+      "certre_requirement_name": "Comprehensive Ophthalmology"
+    }
+  ],
+  "Limitation": [
+    {
+      "patmcsn_type": "limitation",
+      "patmcsn_limitation": "TML",
+      "patmcsn_from": "01-07-2025",
+      "patmcsn_to": "30-10-2026",
+      "patmcsn_reason": "Add Limitation"
+    }
+  ],
+  "EditLimitation": [
+    {
+      "patmcsn_type": "limitation",
+      "patmcsn_limitation": "TML",
+      "patmcsn_from": "01-07-2025",
+      "patmcsn_to": "30-10-2025",
+      "patmcsn_reason": "Edit for testing"
+    }
+  ],
+  "DeleteLimitation": [
+    {
+      "patmcsn_type": "limitation",
+      "patmcsn_limitation": "TML",
+      "patmcsn_from": "01-07-2025",
+      "patmcsn_to": "30-10-2025",
+      "patmcsn_limitation_removed_reason": "Remove for testing"
+    }
+  ],
+  "MCOML": [
+    {
+      "patmce_class": "Class 1 Pilots",
+      "patmce_status": "fit",
+      "patmce_mode": "initial",
+      "patmce_licensing_authority": "CAA",
+      "patmce_sub_class": "Single pilot commercial operations carrying passengers",
+      "patmce_ame_declaration_text": "Declaration Added",
+      "patmce_notes": "Edited MC notes",
+      "patmch_reason": "Added Deletion Reason",
+      "patmcd_last_completed_date": "02-09-2025"
+    }
+  ],
+  "Fitness": [
+    {
+      "patmcsn_id": 1411,
+      "patmcsn_sgr_id": 34803,
+      "patmcsn_pat_id": "788310",
+      "patmcsn_type": "fitness",
+      "patmcsn_reason": "Fitness is added now",
+      "patmcsn_cert_code": "Class1SP",
+      "patmcsn_fit_status": "fit"
+    },
+    {
+      "patmcsn_id": 1412,
+      "patmcsn_sgr_id": 34803,
+      "patmcsn_pat_id": "788310",
+      "patmcsn_type": "fitness",
+      "patmcsn_reason": "Fitness is added now",
+      "patmcsn_cert_code": "Class1OC",
+      "patmcsn_fit_status": "unfit"
+    },
+    {
+      "patmcsn_id": 1413,
+      "patmcsn_sgr_id": 34803,
+      "patmcsn_pat_id": "788310",
+      "patmcsn_type": "fitness",
+      "patmcsn_reason": "Fitness is added now",
+      "patmcsn_cert_code": "Class2",
+      "patmcsn_fit_status": "referred"
+    },
+    {
+      "patmcsn_id": 1414,
+      "patmcsn_sgr_id": 34803,
+      "patmcsn_pat_id": "788310",
+      "patmcsn_type": "fitness",
+      "patmcsn_reason": "Fitness is added now",
+      "patmcsn_cert_code": "LAPL",
+      "patmcsn_fit_status": "fit"
+    }
+  ]
+}

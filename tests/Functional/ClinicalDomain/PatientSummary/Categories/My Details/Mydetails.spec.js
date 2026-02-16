@@ -1,0 +1,43 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://cellma4testing.riomed.com/cellmaUser/login');
+  await page.getByTestId('Username').click();
+  await page.getByTestId('Username').fill('manoj.auto');
+  await page.getByTestId('Password').click();
+  await page.getByTestId('Password').fill('Manoj@2024');
+  await page.getByTestId('Login').click();
+//  await page.pause()
+  await page.getByTestId('todaysAppointments').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByTestId('myAlerts').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByRole('button', { name: 'messages My Messages' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByRole('button', { name: 'messages My Messages' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByTestId('myTasks').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByTestId('myTasks').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByTestId('Worklist').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByTestId('Worklist').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByRole('button', { name: 'myCommunication Communication' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByRole('button', { name: 'myCommunication Communication' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByRole('button', { name: 'CaseLoad Image Avatar My' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByRole('button', { name: 'CaseLoad Image Avatar My' }).getByLabel('cellmaAccordionIcon').click();
+  await page.getByRole('button', { name: 'serviceAppointment', exact: true }).click();
+  await page.getByRole('button', { name: 'serviceAlert', exact: true }).click();
+  await page.getByRole('button', { name: 'Back Button' }).click();
+  await page.getByTestId('moduleDrawerMyDetails').click();
+  await page.getByTestId('todaysAppointments').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByTestId('myAlerts').getByRole('button', { name: 'cellmaAccordionIcon' }).click();
+  await page.getByRole('button', { name: 'serviceMessages', exact: true }).click();
+  await page.getByRole('button', { name: 'cancelIcon' }).click();
+  await page.getByTestId('myTasks').getByRole('button', { name: 'serviceTasks' }).click();
+  await page.getByTestId('moduleDrawerMyDetails').click();
+  await page.getByRole('button', { name: 'worklist', exact: true }).click();
+  await page.getByTestId('moduleDrawerMyDetails').click();
+  await page.getByRole('button', { name: 'communication', exact: true }).click();
+  await page.getByTestId('moduleDrawerMyDetails').click();
+  await page.getByRole('button', { name: 'myCaseLoad', exact: true }).click();
+  await page.getByTestId('moduleDrawerMyDetails').click();
+  await page.getByTestId('Expand All').click();
+ // await page.getByTestId('Expand All').click();
+  await page.getByRole('button', { name: 'profileIcon' }).click();
+  await page.getByText('Logout').click();
+});

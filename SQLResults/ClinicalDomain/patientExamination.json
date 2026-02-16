@@ -1,0 +1,19 @@
+[
+  {
+    "exam_id": 5763,
+    "exam_est_id": 68,
+    "exam_sgr_id": 81242,
+    "exam_pat_id": 52097,
+    "exam_pacr_id": 36674,
+    "exam_outcome": "Abnormal",
+    "exam_record_status": "approved",
+    "exam_notes": "Edited for Notes",
+    "exam_patient_notes": null,
+    "exam_risk": "none",
+    "exam_updated": "13/02/2026",
+    "exam_updated_by": "manoj.auto",
+    "exam_imported": null,
+    "exam_imported_method": null,
+    "exam_cdcd_id": null
+  }
+]
