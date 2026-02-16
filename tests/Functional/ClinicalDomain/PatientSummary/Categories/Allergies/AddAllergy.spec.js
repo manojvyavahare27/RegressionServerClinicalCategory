@@ -109,6 +109,7 @@ test.describe("Allergy Category", () => {
      
       await confirmexisting.clickOnConfirmExistingDetails();   
      await page.waitForTimeout(4000);
+    // await page.pause()
       // const alertPopup = page.locator("xpath=//h2[text()='Alerts']");
       // if (await alertPopup.isVisible()) {
       //    const cancelButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
@@ -116,14 +117,14 @@ test.describe("Allergy Category", () => {
       //     await cancelButton.click();
       //   }
       // await page.waitForTimeout(2000);
-      
-      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+      //await page.pause()
+      const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await carePlan.closePopUp()
+          await allergy.closePopUp()
         }
-      await page.waitForTimeout(2000);
-      
+      await page.waitForTimeout(4000);
+
        await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
       await contacthistory.selectContactReasonFilter("Assessments");     
