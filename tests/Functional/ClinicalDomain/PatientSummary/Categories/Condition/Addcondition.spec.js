@@ -113,7 +113,7 @@ test.describe("condition Category", () => {
      const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await carePlan.closePopUp()
+          await condition.closePopUp()
         }
       await page.waitForTimeout(4000);
       
