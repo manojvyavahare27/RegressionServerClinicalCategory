@@ -107,9 +107,7 @@ test.describe("Care Plan Category", () => {
      
       //await page.pause()
       await page.waitForTimeout(3000);
-      await page.waitForTimeout(2000);
-      await page.waitForTimeout(2000);
-      await page.waitForTimeout(2000);
+     
       const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
       if(alertPopup==true)
         {       

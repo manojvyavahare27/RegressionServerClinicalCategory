@@ -87,7 +87,7 @@ test.describe("Allergy Category", () => {
       logger.info("Password enter successfully");
       await loginpage.clickOnLogin();      
       logger.info("Clicked on Login button successfully");
-     // await homepage.clickOnHomeDashboardIcon()
+           // await homepage.clickOnHomeDashboardIcon()
      
       await homepage.clickOnSideIconPatient()
       logger.info("Clicked on Patient Icon successfully");
@@ -106,14 +106,21 @@ test.describe("Allergy Category", () => {
          
       await patientsearch.clickOnSearchPatientLink();
       await page.waitForTimeout(1500);
-      await page.pause()
+     
       await confirmexisting.clickOnConfirmExistingDetails();   
      await page.waitForTimeout(4000);
-      const alertPopup = page.locator("xpath=//h2[text()='Alerts']");
-      if (await alertPopup.isVisible()) {
-         const cancelButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
-          await cancelButton.waitFor({ state: 'visible', timeout: 5000 });
-          await cancelButton.click();
+      // const alertPopup = page.locator("xpath=//h2[text()='Alerts']");
+      // if (await alertPopup.isVisible()) {
+      //    const cancelButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
+      //     await cancelButton.waitFor({ state: 'visible', timeout: 5000 });
+      //     await cancelButton.click();
+      //   }
+      // await page.waitForTimeout(2000);
+      
+      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+      if(alertPopup==true)
+        {       
+          await carePlan.closePopUp()
         }
       await page.waitForTimeout(2000);
       
