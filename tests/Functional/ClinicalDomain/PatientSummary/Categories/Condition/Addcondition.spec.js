@@ -108,13 +108,14 @@ test.describe("condition Category", () => {
       await page.waitForTimeout(1500);
       await confirmexisting.clickOnConfirmExistingDetails();   
 
-      await page.waitForTimeout(5000);
-      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+     await page.waitForTimeout(6000);
+     
+     const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await condition.closePopUp()
+          await carePlan.closePopUp()
         }
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(4000);
       
        await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
