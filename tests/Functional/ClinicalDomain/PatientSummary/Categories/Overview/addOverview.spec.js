@@ -102,12 +102,13 @@ test.describe("Overview Category", () => {
         await page.waitForTimeout(1500);
         await confirmexisting.clickOnConfirmExistingDetails();        
         // await page.pause()
-      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+        await page.waitForTimeout(4000);
+      const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await overview.closePopUp(page)
-        }                 
-       await page.waitForTimeout(1000)  
+          await overview.closePopUp()
+        }
+      await page.waitForTimeout(4000);
        // await contacthistory.enterContactDate('26/04/2024');
         await contacthistory.selectContactReason('Assessments');
         await contacthistory.selectContactLocation('Cardio Location');
