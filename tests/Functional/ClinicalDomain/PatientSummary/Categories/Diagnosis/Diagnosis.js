@@ -106,14 +106,15 @@ test.describe("Diagnosis Category", () => {
       await page.waitForTimeout(2000);
       await confirmexisting.clickOnConfirmExistingDetails();        
       
-    
-      await page.waitForTimeout(5000);
-      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+    await page.waitForTimeout(6000);
+     
+     const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
-        {                
+        {       
           await diagnosis.closePopUp()
         }
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(4000);
+      
       // await diagnosis.clickOnSavePopup()  
       await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
@@ -124,7 +125,10 @@ test.describe("Diagnosis Category", () => {
       //await contacthistory.enterContactWith("Dr Sathya");
       await contacthistory.clickOnAddContact();    
       
-
+      //await page.pause()
+      await page.pause()
+await page.getByRole('button', { name: 'Clinical History' }).click()
+  await page.waitForTimeout(2000);
       await page.locator("xpath=//h1[normalize-space()='Diagnosis']").click()
      
       //Add Favourites

@@ -14,7 +14,7 @@ module.exports = defineConfig({
   globalSetup: require.resolve("./config/global-setup"),
   testDir: './tests',
   testMatch: ['**/Functional/ClinicalDomain/PatientSummary/Categories/Recommendations/Addrecommendations.spec.js',
-              '**/Functional/ClinicalDomain/PatientSummary/Categories/Diagnosis/AddDiagnosis.spec.js',
+              '**/Functional/ClinicalDomain/PatientSummary/Categories/Diagnosis/AddDiagnosisold.spec.js',
               '**/Functional/ClinicalDomain/PatientSummary/Categories/Allergies/AddAllergy.spec.js',
               '**/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.js',
               '**/Functional/ClinicalDomain/PatientSummary/Categories/Interpretations/AddInterpretation.spec.js',
