@@ -118,7 +118,7 @@ test.describe("Overview Category", () => {
         await overview.clickOnPinContactItemsMenu();
         await overview.selectCategoryFromList("Overview"); 
         await page.waitForTimeout(2000)
-        await page.pause()
+      
   
         //    ////////REVIEW EXISTING ITEM AND DELETE/////
         // if(await overview.checkItemOnHistoryTable(jsonData.AddOverview[index].pacr_que_name)){
@@ -154,8 +154,8 @@ test.describe("Overview Category", () => {
         await overview.selectandAddOverview();
         //await overviewExtraDetails.clickOnClincialItemCollapsable();
         await page.waitForTimeout(1000)
-        await page.pause()
-      //  await overviewExtraDetails.selectClinicalItemSubcategory(jsonData.AddOverview[index].eli_text);
+       
+        await overviewExtraDetails.selectClinicalItemSubcategory(jsonData.AddOverview[index].eli_text);
         //await outcomeExtraDetails.enterDateOfOutcome(jsonData.AddOutcome[index].outc_date);
         //await outcomeExtraDetails.selectFrequency(jsonData.AddOutcome[index].outc_frequency);
         await overviewExtraDetails.enterOverviewNotes(jsonData.AddOverview[index].over_notes);
@@ -239,7 +239,8 @@ test.describe("Overview Category", () => {
         ////////AUTO UPDATE RISK AFTER UPDATING OUTCOME /////
       
         //await expect(page.getByText('Outcome Record Updated Successfully')).toHaveText('Outcome Record Updated Successfully')
-        await overview.clickOnItemHistory();
+      //  await overview.clickOnItemHistory();
+        await page.getByRole('button', { name: 'patientHistoryIconButton' }).click()
        await overview.clickOnHistoryItemDiv();
         await page.waitForTimeout(1000)
         await overview.closeWindow();
