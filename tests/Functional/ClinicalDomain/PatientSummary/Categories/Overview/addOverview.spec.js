@@ -155,7 +155,7 @@ test.describe("Overview Category", () => {
         await overview.selectandAddOverview();
         await page.pause()
         //await overviewExtraDetails.clickOnClincialItemCollapsable();
-        await page.waitForTimeout(1000)
+        await page.waitForTimeout(4000)
        
         await overviewExtraDetails.selectClinicalItemSubcategory(jsonData.AddOverview[index].eli_text);
         //await outcomeExtraDetails.enterDateOfOutcome(jsonData.AddOutcome[index].outc_date);
@@ -235,7 +235,7 @@ test.describe("Overview Category", () => {
        "\n Update Patient Clinical Records Comparision: Parameters from both JSON files do not match!\n"
      );
    }
-   await page.pause()
+   //await page.pause()
 
   
         ////////AUTO UPDATE RISK AFTER UPDATING OUTCOME /////

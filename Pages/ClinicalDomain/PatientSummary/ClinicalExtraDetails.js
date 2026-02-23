@@ -34,9 +34,10 @@ class ClinicalExtraDetails {
 
 
 
+    
     //Allergy
     //this.clinicalItemSubcategory = page.locator("xpath=//input[@id='Sub Category']");
-    this.clinicalItemSubcategory = page.locator("xpath=//input[@id='Sub Category']");
+    this.clinicalItemSubcategory = page.getByRole('combobox', { name: 'Sub Category' })
     this.clinicalItemCollapsableAllergy1 = page.getByTestId("allergies").getByLabel("cellmaAccordionIcon");
     this.clinicalItemCollapsableAllergy2 = page.getByTestId("episodes[0].id").getByLabel("cellmaAccordionIcon");
     this.clinicalSubcategoryAllergy = page.locator("xpath=//input[@name='subCategory']");
