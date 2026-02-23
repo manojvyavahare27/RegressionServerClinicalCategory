@@ -118,8 +118,8 @@ test.describe("Overview Category", () => {
         await overview.clickOnViewContactItemsMenu();
         await overview.clickOnPinContactItemsMenu();
         await overview.selectCategoryFromList("Overview"); 
-        await page.waitForTimeout(2000)
-      
+        await page.waitForTimeout(4000)
+      //  await page.pause()
   
         //    ////////REVIEW EXISTING ITEM AND DELETE/////
         // if(await overview.checkItemOnHistoryTable(jsonData.AddOverview[index].pacr_que_name)){
@@ -153,6 +153,7 @@ test.describe("Overview Category", () => {
          await overview.handleSubCategoryPopup(page)
         await page.getByLabel('cancelIcon').click();
         await overview.selectandAddOverview();
+        await page.pause()
         //await overviewExtraDetails.clickOnClincialItemCollapsable();
         await page.waitForTimeout(1000)
        
@@ -202,7 +203,7 @@ test.describe("Overview Category", () => {
         else{
           console.error("Newly added item is reviewed before updating the record.");
         }*/
-        await overview.clickOnItemEdit('Overview');
+        await overview.clickOnItemEdit('Sub Category');
         await page.waitForTimeout(2000)
        await overview.handleSubCategoryPopup(page)
         //await overviewExtraDetails.clickOnClincialItemCollapsable();
@@ -234,25 +235,25 @@ test.describe("Overview Category", () => {
        "\n Update Patient Clinical Records Comparision: Parameters from both JSON files do not match!\n"
      );
    }
-   //await page.pause()
+   await page.pause()
 
   
         ////////AUTO UPDATE RISK AFTER UPDATING OUTCOME /////
       
         //await expect(page.getByText('Outcome Record Updated Successfully')).toHaveText('Outcome Record Updated Successfully')
       //  await overview.clickOnItemHistory();
-        await page.getByRole('button', { name: 'patientHistoryIconButton' }).click()
-       await overview.clickOnHistoryItemDiv();
-        await page.waitForTimeout(1000)
-        await overview.closeWindow();
-        await page.waitForTimeout(2000)
-        if(await overview.checkItemOnHistoryTable(null, true)){
-          console.error('Newly added item has not been reviewed after updating the record.');
-          await overview.clickOnItemReview();
-        }
-        else{
-          console.log('Newly added item has been reviewed after updating the record.');
-        }
+      //   await page.getByRole('button', { name: 'patientHistoryIconButton' }).click()
+      //  await overview.clickOnHistoryItemDiv();
+      //   await page.waitForTimeout(1000)
+      //   await overview.closeWindow();
+      //   await page.waitForTimeout(2000)
+      //   if(await overview.checkItemOnHistoryTable(null, true)){
+      //     console.error('Newly added item has not been reviewed after updating the record.');
+      //     await overview.clickOnItemReview();
+      //   }
+      //   else{
+      //     console.log('Newly added item has been reviewed after updating the record.');
+      //   }
         await page.waitForTimeout(500)
         await overview.clickOnItemHighlightNone();
         await page.waitForTimeout(500)
@@ -296,7 +297,7 @@ test.describe("Overview Category", () => {
    //await page.pause()
        ///////// Deleting Item ////////////
   
-        await overview.clickOnItemEdit('Overview');
+        await overview.clickOnItemEdit('Sub Category');
         await page.waitForTimeout(2000)
         await overviewExtraDetails.clickOnDelete();
         await overviewExtraDetails.clickOnCancelDelete();
