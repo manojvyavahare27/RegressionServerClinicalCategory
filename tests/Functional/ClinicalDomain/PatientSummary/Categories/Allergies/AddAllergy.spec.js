@@ -124,6 +124,7 @@ test.describe("Allergy Category", () => {
           await allergy.closePopUp()
         }
       await page.waitForTimeout(4000);
+      
 
        await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
