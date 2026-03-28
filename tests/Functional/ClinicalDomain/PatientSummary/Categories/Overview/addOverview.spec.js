@@ -84,6 +84,7 @@ test.describe("Overview Category", () => {
       await homepage.clickOnPatientIcon();
       logger.info("Clicked on Patient Icon successfully");
       await patientsearch.clickOnSearchButton();
+       await page.pause()
         logger.info("Clicked on Search button successfully");
         await patientsearch.enterGivenName(data.pat_firstname);
         logger.info("Given Name entered successfully");
@@ -103,10 +104,11 @@ test.describe("Overview Category", () => {
         await confirmexisting.clickOnConfirmExistingDetails();        
         // await page.pause()
         await page.waitForTimeout(4000);
-      const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
+        await page.pause()
+     const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await overview.closePopUp()
+          await allergy.closePopUp()
         }
       await page.waitForTimeout(4000);
        // await contacthistory.enterContactDate('26/04/2024');
@@ -119,7 +121,7 @@ test.describe("Overview Category", () => {
         await overview.clickOnPinContactItemsMenu();
         await overview.selectCategoryFromList("Overview"); 
         await page.waitForTimeout(2000)
-      
+     
   
         //    ////////REVIEW EXISTING ITEM AND DELETE/////
         // if(await overview.checkItemOnHistoryTable(jsonData.AddOverview[index].pacr_que_name)){
