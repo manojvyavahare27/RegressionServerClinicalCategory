@@ -18,7 +18,7 @@ class ContactHistory
        // this.contactLocationListItem = page.locator("xpath=//li[text()='Cardio 1']") //This is updated dynamically in common dropdown function 
         this.contactWith =  page.locator("xpath=//input[@id='Contact With']")
         this.addContact = page.locator("xpath=//div[contains(text(),'Add Contact')]")
-        this.showFilter=page.locator("xpath=//a[text()='Show Filters']")
+        this.showFilter=page.getByTestId('showHideFilters')
         
         //Customizable view
         //this.settingButton=page.locator("xpath=//button[@aria-label='settingButton']")
@@ -26,9 +26,9 @@ class ContactHistory
         this.customizableViewButton=page.locator("xpath=//li[text()='Customizable View']")
 
         //Contact History Filters
-        this.showContactByService = page.locator("xpath=//input[@id='showContactByService']")
+        this.showContactByService = page.getByRole('combobox', { name: 'Contacts by Service' })
        // this.contactByServiceListItem = page.locator("xpath=//li[text()='Accounts']") //This is updated dynamically in common dropdown function 
-        this.showAllContactReason = page.locator("xpath=//input[@id='showAllContactReason']")
+        this.showAllContactReason = page.getByRole('combobox', { name: 'Contacts by Reason' })
        // this.contactReasonListItem = page.locator("xpath=//li[text()='Data entry']") //This is updated dynamically in common dropdown function 
 
         //Contact History - Links
