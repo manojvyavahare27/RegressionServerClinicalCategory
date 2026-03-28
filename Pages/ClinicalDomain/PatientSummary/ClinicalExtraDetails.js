@@ -646,10 +646,10 @@ async enterSocialNotes(soci_notes)
   }
 
   //Fill Ouutome Notes
-  // async enterClinicalItemNotes(diag_notes) {
-  //   //await typeText(this.page, this.diagnosisNotes, diag_notes);
-  //   await this.diagnosisNotes.type(diag_notes)
-  // }
+  async enterClinicalItemNotes(diag_notes) {
+    //await typeText(this.page, this.diagnosisNotes, diag_notes);
+    await this.diagnosisNotes.type(diag_notes)
+  }
   async enterMedicalCertificateNotes(patmce_notes)
   {
     //await this.medicalCertificateNotes.type(patmce_notes)
@@ -925,7 +925,9 @@ async EnterUpdateNotes(carpd_type_notes) {
   }
 
   async enterOnSetDate(date) {
-    await typeText(this.page, this.onSetDate, date);
+    // await typeText(this.page, this.onSetDate, date);
+    await this.onSetDate.fill(date);
+
   }
 
   //Presenting Problems
@@ -1332,10 +1334,13 @@ async enterPatientScanNotes(pascn_notes)
   }
 
   async enterDiagnosedDate(date) {
-    await typeText(this.page, this.diagnosedDate, date);
+   // await typeText(this.page, this.diagnosedDate, date);
+    await this.diagnosedDate.fill(date)
   }
   async enterDiagnosis1stSeenDate(date) {
-    await typeText(this.page, this.diagnosis1stSeenDate, date);
+    //await typeText(this.page, this.diagnosis1stSeenDate, date);
+    await this.diagnosis1stSeenDate.fill(date)
+
   }
   async selectStatus(statusName) {
     await selectFromDropdown(this.page, this.status, statusName);

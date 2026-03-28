@@ -3,7 +3,7 @@
 const fs = require("fs");
 const XLSX = require("xlsx");
 const path = "C:/Riomed/Cellma4Automation";
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const convertExcelToJson = require("../../../../../../config/global-setupOptimized");
  
 const { test, expect } = require("@playwright/test");
@@ -105,6 +105,14 @@ test.describe("Diagnosis Category", () => {
       await patientsearch.clickOnSearchPatientLink();
       await page.waitForTimeout(2000);
       await confirmexisting.clickOnConfirmExistingDetails();    
+
+       const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
+      if(alertPopup==true)
+        {       
+          await allergy.closePopUp()
+        }
+      await page.waitForTimeout(4000);
+
        await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
       await contacthistory.selectContactReasonFilter("Assessments");
@@ -184,10 +192,10 @@ test.describe("Diagnosis Category", () => {
       // await diagnosis.selectandAddClinicalItem(jsonData.AddDiagnosis[index].pacr_que_name);
      //await diagnosis.checkItemOnHistoryTable(jsonData.AddDiagnosis[index].pacr_que_name)
  
- 
-      await diagnosisExtraDetails.selectClinicalItemSubcategory("Medical Diagnosis");
-      await diagnosisExtraDetails.enterOnSetDate(jsonData.AddDiagnosis[index].diag_date_onset.toString());
-      await diagnosisExtraDetails.enterDiagnosedDate(jsonData.AddDiagnosis[index].diag_date_diagnosed.toString());
+  await page.pause()
+      // await diagnosisExtraDetails.selectClinicalItemSubcategory("Medical Diagnosis");
+      await diagnosisExtraDetails.enterOnSetDate(jsonData.AddDiagnosis[index].diag_date_onset);
+      await diagnosisExtraDetails.enterDiagnosedDate(jsonData.AddDiagnosis[index].diag_date_diagnosed);
       await diagnosisExtraDetails.enterDiagnosis1stSeenDate(jsonData.AddDiagnosis[index].diag_date_firstseen)
       await page.pause()
       await diagnosisExtraDetails.selectSeverity(jsonData.AddDiagnosis[index].diag_severity)
@@ -205,7 +213,8 @@ test.describe("Diagnosis Category", () => {
       await page.getByRole('checkbox', { name: 'Private record' }).click()
       await page.getByRole('checkbox', { name: 'Set as default' }).click()
      // await diagnosisExtraDetails.selectFrequency("1");
-      await diagnosisExtraDetails.enterClinicalItemNotes("Added Diagnosis Notes From Playwright");
+     await page.pause()
+      await diagnosisExtraDetails.enterClinicalItemNotes(jsonData.AddDiagnosis[index].diag_notes);
       await diagnosisExtraDetails.clickOnSaveExtraDetails();
       //await page.pause()
       await page.waitForTimeout(500);
@@ -242,9 +251,9 @@ test.describe("Diagnosis Category", () => {
       await diagnosis.clickOnItemDiv(jsonData.EditDiagnosis[index].pacr_que_name);
       await diagnosis.clickOnItemEdit();
       //await diagnosisExtraDetails.clickOnClincialItemCollapsable();
-      await diagnosisExtraDetails.selectClinicalItemSubcategory("Subsec Diagnosis");
-      await diagnosisExtraDetails.enterOnSetDate(jsonData.EditDiagnosis[index].diag_date_onset.toString());
-      await diagnosisExtraDetails.enterDiagnosedDate(jsonData.EditDiagnosis[index].diag_date_diagnosed.toString());
+     // await diagnosisExtraDetails.selectClinicalItemSubcategory("Subsec Diagnosis");
+      await diagnosisExtraDetails.enterOnSetDate(jsonData.EditDiagnosis[index].diag_date_onset);
+      await diagnosisExtraDetails.enterDiagnosedDate(jsonData.EditDiagnosis[index].diag_date_diagnosed);
       await page.waitForTimeout(1500)
       await diagnosisExtraDetails.enterDiagnosis1stSeenDate(jsonData.EditDiagnosis[index].diag_date_firstseen)      
       //await diagnosisExtraDetails.selectStatus(jsonData.EditDiagnosis[index].diag_diagnosis_status)
@@ -252,9 +261,7 @@ test.describe("Diagnosis Category", () => {
       await diagnosisExtraDetails.selectActivity(jsonData.EditDiagnosis[index].diag_activity)
  
  
-      await diagnosisExtraDetails.enterClinicalItemNotes(
-        "Updated Diagnosis Notes From Playwright"
-      );
+      await diagnosisExtraDetails.enterClinicalItemNotes(jsonData.EditDiagnosis[index].diag_notes);
 
       await diagnosisExtraDetails.clickOnSaveExtraDetails();
       await page.waitForTimeout(500);
