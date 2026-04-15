@@ -267,7 +267,7 @@ test.describe("Diagnosis Category", () => {
       await page.waitForTimeout(500);
     //  await page.getByTestId('Check All').click()
     //  await page.getByLabel('saveChecklist').click()
-      await page.waitForTimeout(1000);
+    
       await expect(page.getByText('Diagnosis record updated successfully')).toHaveText('Diagnosis record updated successfully')
  
        ////// Database comparison - Patient Clinical Records - UPDATE Diagnosis/////////
