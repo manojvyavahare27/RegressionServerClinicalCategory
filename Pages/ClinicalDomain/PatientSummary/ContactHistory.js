@@ -18,7 +18,8 @@ class ContactHistory
        // this.contactLocationListItem = page.locator("xpath=//li[text()='Cardio 1']") //This is updated dynamically in common dropdown function 
         this.contactWith =  page.locator("xpath=//input[@id='Contact With']")
         this.addContact = page.locator("xpath=//div[contains(text(),'Add Contact')]")
-        this.showFilter=page.locator("xpath=//a[text()='Show Filters']")
+        this.showFilter=page.getByTestId('showHideFilters')
+         
         
         //Customizable view
         //this.settingButton=page.locator("xpath=//button[@aria-label='settingButton']")

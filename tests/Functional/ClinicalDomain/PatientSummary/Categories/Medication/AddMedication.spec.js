@@ -107,7 +107,7 @@ test.describe("Medications Category", () => {
       //   {       
       //     await Medications.closePopUp(page)
       //   } 
-      
+      await page.pause()
       await page.waitForTimeout(5000)
       const closeButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
 

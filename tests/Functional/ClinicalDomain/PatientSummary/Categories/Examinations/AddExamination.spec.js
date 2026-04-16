@@ -132,7 +132,7 @@ test.describe("Examination Category", () => {
         }                 
        await page.waitForTimeout(1000)
       
-       
+       await page.pause()
         await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
       await contacthistory.selectContactReasonFilter("Assessments");     
