@@ -83,7 +83,7 @@ test.describe("Medications Category", () => {
       logger.info("Password enter successfully");
       await loginpage.clickOnLogin();      
       logger.info("Clicked on Login button successfully");
-      await page.pause()
+     
     
       await homepage.clickOnPatientIcon();
       logger.info("Clicked on Patient Icon successfully");
@@ -109,16 +109,14 @@ test.describe("Medications Category", () => {
       //   } 
       
       await page.waitForTimeout(5000)
-      const closeButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
+       const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
+      if(alertPopup==true)
+        {       
+          await Medications.closePopUp()
+        }
+      await page.waitForTimeout(4000);
 
-if (await closeButton.isVisible().catch(() => false)) {
-    await closeButton.click();
-    console.log("Popup closed");
-} else {
-    console.log("Close button not found");
-}
-
-       await page.waitForTimeout(1000)  
+     
        await contacthistory.clickOnShowFilter()
       await contacthistory.selectServiceFilter("General Medicine Automation");
       await contacthistory.selectContactReasonFilter("Assessments");
@@ -160,7 +158,7 @@ if (await closeButton.isVisible().catch(() => false)) {
       const patId = results[0].paa_pat_id;
       console.log("Patient Accessed by User:" + patId);
 
-      await page.pause()
+     
       //Add Favourites
       await Medications.clickOnFavouriteQueMedication();
         await page.waitForTimeout(500);
