@@ -184,7 +184,7 @@ class ClinicalExtraDetails {
          this.addToWorklist= page.locator("xpath=//button[@aria-label='Add To Worklist']")
          this.addPathway= page.locator("xpath=//button[@aria-label='Add Pathway']")
          this.link= page.locator("xpath=//button[@aria-label='Link']")
-         this.closePopup= page.locator("xpath=//button[@aria-label='cancelIcon']")
+         this.closePopup= page.getByRole('button', { name: 'cancelIcon' })
 
 
         //Patient Scan

@@ -93,20 +93,24 @@ test.describe("Patient Consent Category", () => {
             await page.waitForTimeout(1000);
             await confirmexisting.clickOnConfirmExistingDetails();
             await page.waitForTimeout(5000)
-            
-            const alert = await page.getByRole('heading', { name: 'Alerts', exact: true }).isVisible()
+             await page.pause()
+            const alert = await page.getByRole('heading', { name: 'PopupTitle - Alerts' }).isVisible()
             if (alert) {
               await ExtraDetailsPage.clickPopup();
             }
+            await page.getByRole('button', { name: 'Banner Button' }).click()
+            await page.getByTestId('links').click()
+            await page.getByRole('heading', { name: 'Patient Consent' }).click()
 
-            await SummaryPage.clickOnDropdownAddToo();
-            await SummaryPage.clickOnPatientConsent();
+            // await SummaryPage.clickOnDropdownAddToo();
+            // await SummaryPage.clickOnPatientConsent();
 
-            const isVisible = await page.locator("xpath=//button[@aria-label='editIcon']").isVisible()
-            while (isVisible) {
-              await consentPage.clickOnDeleteButton();
-              await page.getByTestId('Ok').click();
-            }
+            // const isVisible = await page.locator("xpath=//button[@aria-label='editIcon']").isVisible()
+            // while (isVisible) {
+            //   await consentPage.clickOnDeleteButton();
+            //   await page.getByTestId('Ok').click();
+            // }
+           
 
             //Document upload through playwright still does not function correctly on this page
             //Please note document upload on Cellma itself functions correctly
