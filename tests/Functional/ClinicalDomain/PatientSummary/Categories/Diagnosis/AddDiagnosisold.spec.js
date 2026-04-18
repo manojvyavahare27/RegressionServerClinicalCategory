@@ -109,7 +109,7 @@ test.describe("Diagnosis Category", () => {
        const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await allergy.closePopUp()
+          await diagnosis.closePopUp()
         }
       await page.waitForTimeout(4000);
 
