@@ -14,6 +14,5 @@ export default class Environment{
      // this.Tets="http://10.0.0.72:8080/cellmaUser/login"
        this.RefPortal="https://c4pentest.riomed.com/cellmaPortal/portal"
        this.PharmacyPortal="https://c4pentest.riomed.com/cellmaPortal/portal/login"
-
     }     
 }
