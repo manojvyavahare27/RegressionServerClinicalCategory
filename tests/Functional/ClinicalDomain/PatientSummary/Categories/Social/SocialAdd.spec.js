@@ -160,7 +160,7 @@ test.describe("social Category", () => {
       await socialExtraDetails.enterSocialNotes(jsonData.Addsocial[index].soci_notes);
       await socialExtraDetails.clickOnSaveExtraDetails();
       await page.waitForTimeout(1000);
-      await page.pause()
+      
      // await expect(page.getByText("Recommendation Record Added Successfully")).toHaveText("Recommendation Record Added Successfully");
       //await expect(page.getByText(`${clinicaCatergory} Record Added Successfully`)).toHaveText(`${clinicaCatergory} Record Added Successfully`); 
      
@@ -197,7 +197,7 @@ test.describe("social Category", () => {
       await socialExtraDetails.clickOnSaveExtraDetails();
       await page.waitForTimeout(1000);
 
-      await page.pause()
+     
        ////// Database comparison - Patient Clinical Records - UPDATE social/////////
      sqlQuery =
      "select pacr_id, pacr_category, pacr_que_name, pacr_clinic_date, pacr_risk, soci_notes"+
@@ -220,7 +220,7 @@ test.describe("social Category", () => {
 
    ////////AUTO UPDATE RISK AFTER UPDATING OUTCOME /////
 
-     await page.pause()
+     
 
       await social.clickOnItemHistory();
       await social.clickOnHistoryItemDiv();
@@ -242,7 +242,7 @@ test.describe("social Category", () => {
       await social.clickOnLevelTwoExtraDetails();
       //await social.clickOnLevelThreeExtraDetails();
       await social.clickOnLevelOneExtraDetails();
-await page.pause()
+
 
       ////// Database comparison - Patient Clinical Records - UPDATE social RISK/////////
      sqlQuery =
@@ -259,7 +259,7 @@ await page.pause()
       "\n Patient Clinical Records Comparision for Edit social Risk: RISK Update Failed! \n"
     );
   }
-await page.pause()
+
      ///////// Deleting Item ////////////
 
       await social.clickOnItemEdit();
@@ -270,7 +270,7 @@ await page.pause()
       await socialExtraDetails.enterDeleteReason(jsonData.Deletesocial[index].pacr_delete_reason);
       await socialExtraDetails.clickOnSaveDeleteReason();
       await page.waitForTimeout(1000)
-     // await page.pause();
+  
 
        ////// Database comparison- Patient Clinical Records - DELETE OUTCOME/////////
        sqlQuery ="select pacr_que_name, pacr_delete_reason from patient_clinical_records where pacr_id=" +
@@ -295,7 +295,7 @@ await page.pause()
          "\n  Patient Clinical Records Comparision for Delete social: Parameters from both JSON files do not match!\n"
        );
      }        
-     await page.pause()
+     
      await page.waitForTimeout(1000);
       await social.clickOnMigratedItemsSection();
       await page.waitForTimeout(1000);
