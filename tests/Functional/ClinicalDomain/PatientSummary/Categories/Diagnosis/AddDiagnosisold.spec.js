@@ -105,7 +105,7 @@ test.describe("Diagnosis Category", () => {
       await patientsearch.clickOnSearchPatientLink();
       await page.waitForTimeout(2000);
       await confirmexisting.clickOnConfirmExistingDetails();    
-
+ await page.waitForTimeout(2000);
        const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
