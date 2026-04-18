@@ -36,7 +36,7 @@ class ClinicalExtraDetails {
 
     //Allergy
     //this.clinicalItemSubcategory = page.locator("xpath=//input[@id='Sub Category']");
-    this.clinicalItemSubcategory = page.locator("xpath=//input[@id='Sub Category']");
+    this.clinicalItemSubcategory = page.getByRole('combobox', { name: 'Sub Category' })
     this.clinicalItemCollapsableAllergy1 = page.getByTestId("allergies").getByLabel("cellmaAccordionIcon");
     this.clinicalItemCollapsableAllergy2 = page.getByTestId("episodes[0].id").getByLabel("cellmaAccordionIcon");
     this.clinicalSubcategoryAllergy = page.locator("xpath=//input[@name='subCategory']");
@@ -174,7 +174,7 @@ class ClinicalExtraDetails {
     this.onsetDate = page.locator("xpath=//input[@name='onsetDate']")
     this.problemSeverity = page.locator("xpath=//input[@name='severity']")
     this.problemRating = page.locator("xpath=//input[@name='rating']")
-    this.problemNotes=page.locator("xpath=//textarea[@data-testid='Notes']")
+    this.problemNotes=page.locator("xpath=//textarea[@name='notes']")
 
 
          //Ed popup icons
