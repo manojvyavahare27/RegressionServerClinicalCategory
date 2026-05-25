@@ -69,8 +69,7 @@ test.describe("Procedure Category", () => {
       const contacthistory = new ContactHistory(page);
       const patientsearch = new PatientSearch(page);
       const Procedures = new ClinicalSummary(page);
-      const ProceduresExtraDetails = new ClinicalExtraDetails(page);
-      
+      const ProceduresExtraDetails = new ClinicalExtraDetails(page);     
 
       const menu = new Menu(page);
       await page.goto(environment.Test);
