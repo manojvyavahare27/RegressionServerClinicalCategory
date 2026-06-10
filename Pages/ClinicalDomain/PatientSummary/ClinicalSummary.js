@@ -50,11 +50,11 @@ class ClinicalSummary {
         this.favouriteItemExamination=page.locator("xpath=//a[@aria-label='Mental Health Assessment']")
         //this.favouriteQueMedication=page.locator("xpath=//div[contains(text(),'Antibiotics')]")
        // this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Medicine Favourites']")
-        this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Medication Orders']")
+        this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Vaccination']")
         
         //        //this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Azithromycin 500mg tablets']")
         //this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Paracetamol 500mg tablets']")
-        this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Ibuprofen 400mg Tablet']")
+        this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Hepatitis B Vaccine']")
 
         // this.orderSetItem = "xpath=//a[text()='Metformin 500mg tablets     ']//..//..//input[@class='PrivateSwitchBase-input css-1m9pwf3']"
         //this.orderSetItem = "xpath=//a[text()='placeholder1']//..//..//input[@class='placeholder2']"       
