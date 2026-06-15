@@ -135,7 +135,7 @@ test.describe("Examination Category", () => {
        
         await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
-      await contacthistory.selectContactReasonFilter("Assessments");     
+     // await contacthistory.selectContactReasonFilter("Assessments");     
       await contacthistory.selectContactReason("Assessments");
       await contacthistory.selectContactLocation("Cardio Location"); 
       await contacthistory.clickOnAddContact();   
