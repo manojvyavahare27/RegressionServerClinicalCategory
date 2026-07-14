@@ -262,7 +262,7 @@ sqlQuery="select pacr_id, pacr_category, pacr_que_name, pacr_clinic_date, pacr_r
       //await page.getByLabel('saveChecklist').click()
       await page.waitForTimeout(1000);
       await expect(page.getByText('Allergy record updated successfully')).toHaveText('Allergy record updated successfully')
-      
+      await page.pause()
        ////// Database comparison - Patient Clinical Records - UPDATE Allergy/////////
      sqlQuery =
      "select pacr_id, pacr_category, pacr_que_name, pacr_clinic_date, pacr_risk,  alrg_notes"+

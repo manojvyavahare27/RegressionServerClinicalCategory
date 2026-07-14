@@ -228,7 +228,7 @@ await page.pause()
       //await MedicationsExtraDetails.clickOnClincialItemCollapsable();
       await Medications.selectandAddClinicalItem(jsonData.AddMedication[index].pacr_que_name)
       await page.waitForTimeout(1000);      
-    
+    await page.pause()
       //await MedicationsExtraDetails.selectClinicalItemSubcategory(jsonData.AddMedication[index].eli_text);
       await MedicationsExtraDetails.enterOnDose(jsonData.AddMedication[index].medi_dose)
       await page.getByTestId('Ok').click()

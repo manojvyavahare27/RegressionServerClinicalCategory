@@ -27,9 +27,9 @@ class ContactHistory
         this.customizableViewButton=page.locator("xpath=//li[text()='Customizable View']")
 
         //Contact History Filters
-        this.showContactByService = page.locator("xpath=//input[@id='showContactByService']")
+        this.showContactByService = page.getByRole('combobox', { name: 'Contacts by Service' })
        // this.contactByServiceListItem = page.locator("xpath=//li[text()='Accounts']") //This is updated dynamically in common dropdown function 
-        this.showAllContactReason = page.locator("xpath=//input[@id='showAllContactReason']")
+        this.showAllContactReason = page.getByRole('combobox', { name: 'Contacts by Reason' })
        // this.contactReasonListItem = page.locator("xpath=//li[text()='Data entry']") //This is updated dynamically in common dropdown function 
 
         //Contact History - Links
