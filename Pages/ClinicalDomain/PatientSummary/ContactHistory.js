@@ -19,7 +19,8 @@ class ContactHistory
         this.contactWith =  page.locator("xpath=//input[@id='Contact With']")
         this.addContact = page.locator("xpath=//div[contains(text(),'Add Contact')]")
         this.showFilter=page.getByTestId('showHideFilters')
-         
+
+
         
         //Customizable view
         //this.settingButton=page.locator("xpath=//button[@aria-label='settingButton']")

@@ -109,7 +109,7 @@ test.describe("Allergy Category", () => {
      
       await confirmexisting.clickOnConfirmExistingDetails();   
      await page.waitForTimeout(6000);
-    // await page.pause()
+     await page.pause()
       // const alertPopup = page.locator("xpath=//h2[text()='Alerts']");
       // if (await alertPopup.isVisible()) {
       //    const cancelButton = page.locator("xpath=//button[@aria-label='cancelIcon']");
@@ -128,7 +128,7 @@ test.describe("Allergy Category", () => {
 
        await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
-      await contacthistory.selectContactReasonFilter("Assessments");     
+      //await contacthistory.selectContactReasonFilter("Assessments");     
       await contacthistory.selectContactReason("Assessments");
       await contacthistory.selectContactLocation("Cardio Location");     
     
