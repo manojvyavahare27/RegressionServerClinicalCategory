@@ -219,7 +219,7 @@ if (await closeButton.isVisible().catch(() => false)) {
      
 
       
-await page.pause()
+
         // Add New Medication
       await Medications.selectandAddClinicalItem(jsonData.AddMedication[index].pacr_que_name)
       await page.waitForTimeout(2000);      
@@ -231,7 +231,7 @@ await page.pause()
     await page.pause()
       //await MedicationsExtraDetails.selectClinicalItemSubcategory(jsonData.AddMedication[index].eli_text);
       await MedicationsExtraDetails.enterOnDose(jsonData.AddMedication[index].medi_dose)
-      await page.getByTestId('Ok').click()
+      await page.getByTestId('OK').click()
       await MedicationsExtraDetails.enterForm(jsonData.AddMedication[index].medi_form)
       await MedicationsExtraDetails.selectFrequency(jsonData.AddMedication[index].medi_frequency)
       await MedicationsExtraDetails.selectRoute(jsonData.AddMedication[index].medi_route)
