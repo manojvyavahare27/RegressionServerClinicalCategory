@@ -123,7 +123,7 @@ test.describe("Examination Category", () => {
       //await page.waitForTimeout(3000);
       
       await confirmexisting.clickOnConfirmExistingDetails();
-      await page.pause()
+     
       await page.waitForTimeout(1000);
       const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
       if(alertPopup==true)
@@ -132,7 +132,7 @@ test.describe("Examination Category", () => {
         }                 
        await page.waitForTimeout(1000)
       
-       await page.pause()
+      
         await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
      // await contacthistory.selectContactReasonFilter("Assessments");     
@@ -192,8 +192,8 @@ test.describe("Examination Category", () => {
       await page.waitForTimeout(1000);
       await examinationhome.clickonAddExaminationButton();
       await page.waitForTimeout(1000);
-        await examination.handleSubCategoryPopup(page) 
-      await page.getByLabel('cancelIcon').click();
+      //   await examination.handleSubCategoryPopup(page) 
+      // await page.getByLabel('cancelIcon').click();
       await examinationhome.searchExamination(jsonData.AddExamination[index].pacr_que_name);
       await examinationhome.clickonAddExaminationButton();
       await examinationEd.SelectOutcome(jsonData.AddExamination[index].exam_outcome);
@@ -265,13 +265,12 @@ test.describe("Examination Category", () => {
 
       //Check Examination History section
 
-      await page.pause()
+     
       await examinationhome.expandExaminationHistory();
-      await page.pause()
+     
       await examinationhome.expandExaminationHistory();
       await examinationhome.clickOnAllLinks();
-      await page.pause()
-       await page.pause()
+     
       await examinationhome.clickOnHistoryIcon();
       // await page.pause()
       // await examinationhome.expandsHistoryofExaminationIcon();
