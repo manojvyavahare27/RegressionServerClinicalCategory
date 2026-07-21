@@ -89,7 +89,7 @@ test.describe("LifeStyle Category", () => {
         logger.info("Clicked on Search button successfully");
         await patientsearch.enterGivenName(data.pat_firstname);
         logger.info("Given Name entered successfully");
-        await page.pause()
+     
         await patientsearch.enterFamilyName(data.pat_surname);
         logger.info("Family Name entered successfully");
         //await patientsearch.selectSex(data.pat_sex);
@@ -101,13 +101,12 @@ test.describe("LifeStyle Category", () => {
         await patientsearch.clickOnSearchPatientLink();
         await page.waitForTimeout(1500);
         await confirmexisting.clickOnConfirmExistingDetails();
-       await page.waitForTimeout(4000);
-      const alertPopup= await page.locator("xpath=//h2[text()='Alerts']").isVisible()      
+     const alertPopup= await page.getByRole('button', { name: 'cancelIcon' }).isVisible()      
       if(alertPopup==true)
         {       
-          await lifestyle.closePopUp(page)
-        }                 
-       await page.waitForTimeout(1000)  
+          await lifestyle.closePopUp()
+        }
+      await page.waitForTimeout(4000);
         //await contacthistory.enterContactDate('26/11/2024');
         await contacthistory.selectContactReason('Assessments');
         await contacthistory.selectContactLocation('Cardio Location');
@@ -118,7 +117,7 @@ test.describe("LifeStyle Category", () => {
         await lifestyle.clickOnPinContactItemsMenu();        
         await lifestyle.selectCategoryFromList("Lifestyle");
 
-        await page.pause()
+       
         //Review and delete
         await page.waitForTimeout(2000);
         if(await lifestyle.checkItemOnHistoryTable(jsonData.AddLifestyle[index].pacr_que_name)){
@@ -134,7 +133,7 @@ test.describe("LifeStyle Category", () => {
         }
        
        
-        await page.pause()
+      
         //////Fetch Patient Details/////////
    var sqlQuery =
    "select * from patient_audit where paa_use_username='" + jsonData.loginDetails[0].username + 
@@ -150,7 +149,7 @@ test.describe("LifeStyle Category", () => {
   // Adding new Presenting Problem
   
 
-  await page.pause()
+  
   await lifestyle.selectandAddClinicalItem(jsonData.AddLifestyle[index].pacr_que_name);
   await page.waitForTimeout(2000);
    await lifestyle.handleSubCategoryPopup(page) 
@@ -181,7 +180,7 @@ if (match) {
 } else {
   console.log("\n Patient Clinical Records Comparision: Parameters from both JSON files do not match!\n");
 } 
-await page.pause()
+
   // Edit presenting lifestyle
       await page.waitForTimeout(1000);
       await lifestyle.clickOnItemEdit('Smoking: Current Smoker');

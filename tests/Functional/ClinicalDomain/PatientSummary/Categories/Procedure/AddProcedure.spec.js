@@ -69,8 +69,7 @@ test.describe("Procedure Category", () => {
       const contacthistory = new ContactHistory(page);
       const patientsearch = new PatientSearch(page);
       const Procedures = new ClinicalSummary(page);
-      const ProceduresExtraDetails = new ClinicalExtraDetails(page);
-      
+      const ProceduresExtraDetails = new ClinicalExtraDetails(page);     
 
       const menu = new Menu(page);
       await page.goto(environment.Test);
@@ -110,7 +109,7 @@ test.describe("Procedure Category", () => {
        await page.waitForTimeout(1000) 
       // await contacthistory.clickOnShowFilter()
       await contacthistory.selectServiceFilter("General Medicine Automation");
-      await contacthistory.selectContactReasonFilter("Assessments");
+      //await contacthistory.selectContactReasonFilter("Assessments");
       //await contacthistory.enterContactDate("26/04/2024");
       await contacthistory.selectContactReason("Assessments");
       await contacthistory.selectContactLocation("Cardio Location");

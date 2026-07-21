@@ -50,11 +50,11 @@ class ClinicalSummary {
         this.favouriteItemExamination=page.locator("xpath=//a[@aria-label='Mental Health Assessment']")
         //this.favouriteQueMedication=page.locator("xpath=//div[contains(text(),'Antibiotics')]")
        // this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Medicine Favourites']")
-        this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Medication Orders']")
+        this.favouriteQueMedication=page.locator("xpath=//button[@data-testid='Vaccination']")
         
         //        //this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Azithromycin 500mg tablets']")
         //this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Paracetamol 500mg tablets']")
-        this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Ibuprofen 400mg Tablet']")
+        this.favouriteItemMedication=page.locator("xpath=//a[@aria-label='Hepatitis B Vaccine']")
 
         // this.orderSetItem = "xpath=//a[text()='Metformin 500mg tablets     ']//..//..//input[@class='PrivateSwitchBase-input css-1m9pwf3']"
         //this.orderSetItem = "xpath=//a[text()='placeholder1']//..//..//input[@class='placeholder2']"       
@@ -444,7 +444,9 @@ class ClinicalSummary {
 
      async  handleSubCategoryPopup(page) {
     const popupHeader = "//h1[normalize-space()='Choose a Sub Category to continue']";
-    const dropdown = "//input[@id='subcategory']";
+  const dropdown = page.getByRole('combobox', { name: 'Sub Category' })
+    //   const popupHeader = page.getByRole('combobox', { name: 'Sub Category' })
+    // const dropdown =page.getByRole('option', { name: 'Sub Category' })
     const option = page.getByRole('option', { name: 'Sub Category' });
     const saveButton = "//button[@aria-label='saveSubcategoryBtn']";
 

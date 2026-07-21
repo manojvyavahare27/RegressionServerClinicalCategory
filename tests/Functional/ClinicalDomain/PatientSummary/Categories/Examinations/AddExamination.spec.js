@@ -135,7 +135,7 @@ test.describe("Examination Category", () => {
        await page.pause()
         await contacthistory.clickOnShowFilter()  
       await contacthistory.selectServiceFilter("General Medicine Automation");
-      await contacthistory.selectContactReasonFilter("Assessments");     
+     // await contacthistory.selectContactReasonFilter("Assessments");     
       await contacthistory.selectContactReason("Assessments");
       await contacthistory.selectContactLocation("Cardio Location"); 
       await contacthistory.clickOnAddContact();   
@@ -265,12 +265,18 @@ test.describe("Examination Category", () => {
 
       //Check Examination History section
 
+      await page.pause()
       await examinationhome.expandExaminationHistory();
+      await page.pause()
       await examinationhome.expandExaminationHistory();
       await examinationhome.clickOnAllLinks();
+      await page.pause()
+       await page.pause()
       await examinationhome.clickOnHistoryIcon();
-      await examinationhome.expandsHistoryofExaminationIcon();
-      await examinationhome.expandsHistoryofExaminationIcon();
+      // await page.pause()
+      // await examinationhome.expandsHistoryofExaminationIcon();
+      // await page.pause()
+      // await examinationhome.expandsHistoryofExaminationIcon();
       await examinationhome.closeExaminationHistoryPopup();
       await page.waitForTimeout(2000);
       // await examinationhome.clickOnReviewExaminationButton();

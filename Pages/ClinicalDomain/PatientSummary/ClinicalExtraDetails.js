@@ -175,7 +175,7 @@ class ClinicalExtraDetails {
     this.onsetDate = page.locator("xpath=//input[@name='onsetDate']")
     this.problemSeverity = page.locator("xpath=//input[@name='severity']")
     this.problemRating = page.locator("xpath=//input[@name='rating']")
-    this.problemNotes=page.locator("xpath=//textarea[@data-testid='Notes']")
+    this.problemNotes=page.locator("xpath=//textarea[@name='notes']")
 
 
          //Ed popup icons
@@ -185,7 +185,7 @@ class ClinicalExtraDetails {
          this.addToWorklist= page.locator("xpath=//button[@aria-label='Add To Worklist']")
          this.addPathway= page.locator("xpath=//button[@aria-label='Add Pathway']")
          this.link= page.locator("xpath=//button[@aria-label='Link']")
-         this.closePopup= page.locator("xpath=//button[@aria-label='cancelIcon']")
+         this.closePopup= page.getByRole('button', { name: 'cancelIcon' })
 
 
         //Patient Scan
@@ -647,10 +647,10 @@ async enterSocialNotes(soci_notes)
   }
 
   //Fill Ouutome Notes
-  // async enterClinicalItemNotes(diag_notes) {
-  //   //await typeText(this.page, this.diagnosisNotes, diag_notes);
-  //   await this.diagnosisNotes.type(diag_notes)
-  // }
+  async enterClinicalItemNotes(diag_notes) {
+    //await typeText(this.page, this.diagnosisNotes, diag_notes);
+    await this.diagnosisNotes.type(diag_notes)
+  }
   async enterMedicalCertificateNotes(patmce_notes)
   {
     //await this.medicalCertificateNotes.type(patmce_notes)
@@ -926,7 +926,9 @@ async EnterUpdateNotes(carpd_type_notes) {
   }
 
   async enterOnSetDate(date) {
-    await typeText(this.page, this.onSetDate, date);
+    // await typeText(this.page, this.onSetDate, date);
+    await this.onSetDate.fill(date);
+
   }
 
   //Presenting Problems
@@ -1333,10 +1335,13 @@ async enterPatientScanNotes(pascn_notes)
   }
 
   async enterDiagnosedDate(date) {
-    await typeText(this.page, this.diagnosedDate, date);
+   // await typeText(this.page, this.diagnosedDate, date);
+    await this.diagnosedDate.fill(date)
   }
   async enterDiagnosis1stSeenDate(date) {
-    await typeText(this.page, this.diagnosis1stSeenDate, date);
+    //await typeText(this.page, this.diagnosis1stSeenDate, date);
+    await this.diagnosis1stSeenDate.fill(date)
+
   }
   async selectStatus(statusName) {
     await selectFromDropdown(this.page, this.status, statusName);

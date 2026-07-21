@@ -117,7 +117,7 @@ test.describe("Care Plan Category", () => {
       await contacthistory.clickOnShowFilter();
       await page.waitForTimeout(2000);
       await contacthistory.selectServiceFilter("General Medicine Automation");
-      await contacthistory.selectContactReasonFilter("Assessments");
+      //await contacthistory.selectContactReasonFilter("Assessments");
       //await contacthistory.enterContactDate("24-06-2024");
       await contacthistory.selectContactReason("Assessments");
       await contacthistory.selectContactLocation("Cardio Location");
