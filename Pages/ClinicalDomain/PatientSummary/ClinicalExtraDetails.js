@@ -352,7 +352,8 @@ class ClinicalExtraDetails {
     this.btnEditDevice = page.locator("xpath=//button[@aria-label='edit']");
     this.btnDeleteDevice = page.locator("xpath=//button[@data-testid='Delete']")
     this.btnOkDevicePopup = page.locator("xpath=//button[@data-testid='Ok']")
-    this.txtDeleteDeviceReason = page.locator("xpath=//textarea[@id='Reason']")
+    this.txtDeleteDeviceReason = page.locator("xpath=//textarea[@data-testid='Reason for Deletion']")
+    
     this.btnSaveDeleteReason = page.locator("xpath=//button[@aria-label='saveDeleteReason']")
     this.linkRequestOrderStatus = page.locator("xpath=//a[@aria-label='Not Ordered']")
     this.btnExternalRequest = page.locator("xpath=//button[@aria-label='External Request']")
