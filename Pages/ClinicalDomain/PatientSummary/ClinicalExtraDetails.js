@@ -121,7 +121,7 @@ class ClinicalExtraDetails {
     this.delete = page.locator("xpath=//button[@data-testid='Delete']");
     this.deleteCertificate = page.locator("xpath=//button[@aria-label='Delete']");
     this.cancelDelete = page.locator("xpath=//button[@data-testid='Cancel']");
-    this.confirmDelete = page.locator("xpath=//button[@data-testid='Ok']");
+    this.confirmDelete = page.locator("xpath=//button[@data-testid='OK']");
      this.deleteReason = page.getByTestId('Reason for Deletion')
     this.saveDeleteReason = page.locator("xpath=//button[@data-testid='Save']");
 
@@ -145,7 +145,7 @@ class ClinicalExtraDetails {
     this.closeShowLimitationPopup=page.getByRole('button', { name: 'cancelIcon' })
     this.deleteLimitationButton=page.locator("//button[@aria-label='remove']//*[name()='svg']")
     this.btnSaveEditedMcCertificate=page.locator("xpath=//button[@aria-label='saveLimitationForm']")
-    this.reasonForDeletion=page.locator("xpath=//textarea[@aria-label='Reason for Deletion']")
+    this.reasonForDeletion=page.locator("xpath=//textarea[@data-testid='Reason for Deletion']")
     this.saveRemovedLimitation=page.locator("xpath=//button[@aria-label='saveRemoveLimitation']")
     this.btnSaveReasonforDeletion=page.locator("xpath=//button[@data-testid='Delete']")
     this.editMCNotes=page.locator("xpath=//textarea[@aria-label='medicalCertificateNotes']")

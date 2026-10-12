@@ -16,7 +16,7 @@ class ExaminationsHomePage
         //expand History Record
         this.svgbuttonHistoryofExaminationIcon=page.locator("xpath=(//*[@data-testid='ExpandCircleDownOutlinedIcon'])[5]")
         //close History pop up
-        this.buttonClosePopup=page.locator("xpath=//button[@aria-label='cancelIcon']//*[name()='svg']")
+        this.buttonClosePopup=page.getByRole('button', { name: 'cancelIcon' })
         //Examination History links
         this.linkMigrated=page.locator("xpath=//button[@data-testid='migrated']")
         this.linkDeleted=page.locator("xpath=//button[@data-testid='deleted']")

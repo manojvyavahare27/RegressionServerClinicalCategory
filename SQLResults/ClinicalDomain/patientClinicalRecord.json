@@ -1,10 +1,6 @@
 [
   {
-    "pacr_id": 40828,
-    "pacr_category": "Examination",
-    "pacr_que_name": "Dry Eye Assessment",
-    "exam_outcome": "Normal",
-    "pacr_clinic_date": "20/07/2026",
-    "exam_notes": "Added for Notes"
+    "pacr_que_name": "Paracetamol 500mg / Ibuprofen 200mg tablets",
+    "pacr_delete_reason": "Delete for testing"
   }
 ]

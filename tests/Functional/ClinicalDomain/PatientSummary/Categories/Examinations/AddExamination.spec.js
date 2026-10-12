@@ -270,7 +270,7 @@ test.describe("Examination Category", () => {
      
       await examinationhome.expandExaminationHistory();
       await examinationhome.clickOnAllLinks();
-     
+      await page.waitForTimeout(3000);
       await examinationhome.clickOnHistoryIcon();
       // await page.pause()
       // await examinationhome.expandsHistoryofExaminationIcon();
