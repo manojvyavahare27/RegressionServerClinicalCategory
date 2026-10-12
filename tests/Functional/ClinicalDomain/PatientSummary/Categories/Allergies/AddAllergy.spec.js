@@ -199,6 +199,7 @@ await allergy.selectandAddClinicalItem(jsonData.AddAllergy[index].pacr_que_name)
       await allergyExtraDetails.enterAllergyStartDate(jsonData.AddAllergy[index].alrg_start_date)
 
       await allergyExtraDetails.enterAllergyEndDate(jsonData.AddAllergy[index].alrg_end_date)
+      await page.pause()
       await allergyExtraDetails.selectReaction(jsonData.AddAllergy[index].eli_text)
       await allergyExtraDetails.selectReactionSevirity(jsonData.AddAllergy[index].alrg_reaction_severity)
       await allergyExtraDetails.enterallergyTextArea(jsonData.AddAllergy[index].alrg_notes)
