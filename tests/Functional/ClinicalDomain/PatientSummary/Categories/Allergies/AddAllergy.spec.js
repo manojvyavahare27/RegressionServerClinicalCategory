@@ -251,8 +251,8 @@ sqlQuery="select pacr_id, pacr_category, pacr_que_name, pacr_clinic_date, pacr_r
      await page.pause()
      await allergyExtraDetails.enterAllergyStartDate(jsonData.EditAllergy[index].alrg_start_date)
      await allergyExtraDetails.enterAllergyEndDate(jsonData.EditAllergy[index].alrg_end_date)
-     //await allergyExtraDetails.selectReaction(jsonData.EditAllergy[index].eli_text)
-     //await allergyExtraDetails.selectReactionSevirity(jsonData.EditAllergy[index].alrg_reaction_severity)
+     await allergyExtraDetails.selectReaction(jsonData.EditAllergy[index].eli_text)
+     await allergyExtraDetails.selectReactionSevirity(jsonData.EditAllergy[index].alrg_reaction_severity)
      await allergyExtraDetails.enterallergyTextArea(jsonData.EditAllergy[index].alrg_notes)
 
       //await allergyExtraDetails.enterClinicalItemNotes("Updated Allergy Notes From Playwright");

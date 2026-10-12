@@ -44,8 +44,8 @@ class ClinicalExtraDetails {
     this.buttonSpecificAllergyName = page.locator("xpath=//button[@aria-label='Specific Allergy Name']");
     this.allergyStartDate = page.locator("xpath=//input[@id='episodes[0].startDate']");
     this.allergyEndDate = page.locator("xpath=//input[@id='episodes[0].endDate']");
-    this.allergyReaction = page.locator("xpath=//input[@id='episodes[0].reaction']");
-    this.ReactionSeverity = page.locator("xpath=//input[@id='episodes[0].reactionSeverity']");
+    this.allergyReaction = page.locator('[id="mui-component-select-episodes[0].reaction"]')
+    this.ReactionSeverity = page.getByRole('combobox', { name: 'Reaction Severity' })
     this.allergyTextArea = page.locator("xpath=//textarea[@id='episodes[0].allergyNotes']");
 
     //condition ED
