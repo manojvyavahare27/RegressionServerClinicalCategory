@@ -121,7 +121,7 @@ class ClinicalExtraDetails {
     this.delete = page.locator("xpath=//button[@data-testid='Delete']");
     this.deleteCertificate = page.locator("xpath=//button[@aria-label='Delete']");
     this.cancelDelete = page.locator("xpath=//button[@data-testid='Cancel']");
-    this.confirmDelete = page.locator("xpath=//button[@data-testid='OK']");
+    this.confirmDelete = page.locator("xpath=//button[@data-testid='Ok']");
      this.deleteReason = page.getByTestId('Reason for Deletion')
     this.saveDeleteReason = page.locator("xpath=//button[@data-testid='Save']");
 
